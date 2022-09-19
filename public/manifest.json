@@ -13,12 +13,7 @@
     "service_worker": "background.js"
   },
   "action": {},
-  "permissions": ["storage"],
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "run_at": "document_idle",
-      "js": ["contentScript.js"]
-    }
-  ]
+  "permissions": ["storage", "scripting"],
+  "content_scripts": [],
+  "host_permissions": ["https://*/*"]
 }
