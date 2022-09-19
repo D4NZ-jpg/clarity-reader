@@ -1,0 +1,65 @@
+#clarity-reader-articleContainer {
+  --color_background: #f1f3f4;
+  --color_foreground: white;
+  --color_highlight: #afcbff;
+  --font_family: Georgia;
+  --font_color_primary: black;
+  --font_size_text: 1.125rem;
+  --font_size_title: 4rem;
+  --font_size_subtitle: 1.5rem;
+
+  background-color: var(--color_background);
+
+  #articleContainer {
+    margin: 0 25vw;
+    padding: 3rem 4rem;
+    background-color: var(--color_foreground);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  li,
+  a,
+  p {
+    margin: 0;
+    font-family: var(--font-family), 'Times New Roman', Times, serif;
+    color: var(--font_color_primary);
+  }
+
+  h2 {
+    font-size: var(--font_size_subtitle);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: var(--font_size_text);
+  }
+
+  .header {
+    #title {
+      font-size: var(--font_size_title);
+      font-family: var(--font_family), 'Times New Roman', Times, serif;
+    }
+
+    #metadata {
+      margin-top: 0.5rem;
+      display: flex;
+      flex-direction: row;
+
+      #author,
+      #date {
+        margin-right: 1rem;
+        opacity: 0.5;
+      }
+    }
+
+    ::selection {
+      background: var(--color_highlight);
+    }
+  }
+}
