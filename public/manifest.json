@@ -12,10 +12,7 @@
   "background": {
     "service_worker": "background.js"
   },
-  "action": {
-    "default_title": "Clarity Reader",
-    "default_popup": "popup.html"
-  },
+  "action": {},
   "permissions": ["storage"],
   "content_scripts": [
     {
