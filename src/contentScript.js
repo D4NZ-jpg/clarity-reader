@@ -1,4 +1,5 @@
 import Mercury from '@postlight/mercury-parser';
+import './style.scss';
 
 function createHeader(RTitle, RAuthor, RDate) {
   // Make header
